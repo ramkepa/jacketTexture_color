@@ -2,10 +2,6 @@ import * as THREE from "three";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 import Jacket from "./assets/cloth_jacket.glb"; 
-import img from './assets/model1_img0.jpg';
-import img1 from './assets/model2_img0.jpg';
-import img2 from './assets/model3_img0.jpg';
-import img3 from './assets/model4_img0.jpg';
 
 let container = document.getElementById("threeContainer");
 let textureSelector = document.getElementById("imageSelector");
@@ -19,10 +15,7 @@ let shadowEnabled = true;  // Default shadow setting
 let glossyEnabled = false; // Default glossy setting
 let model;
 var cameraPos
-  const image = img
-  const image1 = img1
-  const image2 = img2
-  const image3 = img3
+
 const init = () => {
 
   scene = new THREE.Scene();
@@ -133,7 +126,7 @@ const init = () => {
       material.roughness = 0;
       material.needsUpdate = true;
     }
-    // console.log("Glossy Enabled:", glossyEnabled);
+    console.log("Glossy Enabled:", glossyEnabled);
   });
 
 //   resetButton.addEventListener("click", () => {
