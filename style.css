@@ -1,0 +1,41 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    font-family: sans-serif;
+  }
+  
+  .preview {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  #threeContainer {
+    flex: 1;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 1rem;
+    background: #f0f0f0;
+    border-top: 1px solid #ccc;
+    flex-shrink: 0;
+  }
+  
+  .control-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .control-item label {
+    font-weight: bold;
+  }
